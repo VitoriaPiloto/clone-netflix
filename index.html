@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Netflix clone</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl/owl/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl/owl/owl.theme.default.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">NETFLIX</h2>
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="principal">
+            <div class="container"> <!--Wrapper, é uma classe utilizada para trazer responsividade-->
+                <h3 class="titulo">Ranking of Kings</h3>
+                <p class="descricao">
+                    A história acompanha Bojji, um príncipe surdo e impotente, que mal consegue levantar uma espada feita para crianças. Mesmo com essas limitações, Bojji sonha em se tornar o próximo rei, por mais que seja constantemente alvo de comentários negativos de seus súditos.
+                    Certo dia o jovem príncipe decide se aventurar, encontrando Kage, uma sombra viva que é um dos poucos sobreviventes de um clã de assassinos. Os dois formam uma amizade, e juntos começam a explorar o mundo, encontrando pessoas inesperadas enquanto vão atrás do sonho de Bojji. 
+                </p>
+                <div class="botoes">
+                    <button class="botao" role="button"> <!--Role serve para deixar clara a função da tag-->
+                        <i class="fa-solid fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <button class="botao" role="button"> 
+                        <i class="fa-solid fa-plus"></i>
+                        MINHA LISTA
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="assistidos">
+        <h2>Os mais assistidos:</h2>
+    </div>
+    
+    <div class="carrossel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="img/min1.jpg" class="box-filme">
+            </div>
+            <div class="item">
+                <img src="img/min2.jpg" class="box-filme">
+            </div>
+            <div class="item">
+                <img src="img/min3.jpg" class="box-filme">
+            </div>
+            <div class="item">
+                <img src="img/min4.jpg" class="box-filme">
+            </div>
+            <div class="item">
+                <img src="img/min6.jpg" class="box-filme">
+            </div>
+            <div class="item">
+                <img src="img/min7.jpg" class="box-filme" >
+            </div>
+            <div class="item">
+                <img src="img/min8.jpg" class="box-filme" id="sakugan">
+            </div>
+            <div class="item">
+                <img src="img/min9.jpg" class="box-filme">
+            </div>
+            <div class="item">
+                <img src="img/min10.jpg" class="box-filme" id="ngnl">
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.js"></script>
+    <script src="https://kit.fontawesome.com/2c58c3a35f.js" crossorigin="anonymous"></script>
+    <script src="js/owl/main.js"></script>
+</body>
+</html>

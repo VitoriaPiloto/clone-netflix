@@ -1,0 +1,129 @@
+/*Base*/
+:root{
+    --vermelho:#E50914;
+    --preto:#141414;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box; /*Garante que o tamanho dos elementos não saiam do tamanho da caixa (div, header)*/
+}
+
+body {
+    background-color:var(--preto);
+    font-family: 'Trebuchet MS';;
+    color: white;
+}
+
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center; /*Trabalha na vertical, alinhando ao centro na vertical*/
+    justify-content: space-between; /*Trabalha na horizontal*/
+}
+
+.container{
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.logo{
+    color:var(--vermelho);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS';
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*Filme principal*/
+.principal{
+    font-size: 16px;
+    background-image: linear-gradient(45deg,rgb(0, 0, 0),rgba(0, 0, 0, 0)100%), url(/clone-netflix/img/ousama1.jpg); 
+    background-size: cover;
+    display: flex;
+    flex-direction: column; /*Forçar ao alinhar em coluna*/
+    justify-content: center; /*Segue a mesma direção do flex-direction*/
+    align-items: flex-start;
+    background-position: 70%;
+}
+
+.principal .descricao{
+    margin-bottom: 50px;
+}
+
+.titulo{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS';
+    margin-top: 10%;
+}
+
+.descricao{
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, .5);
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+i{
+    margin-right: 5px;
+}
+
+.botao:hover{
+    background-color: white;
+    color:black;
+}
+
+.principal .container{ /*Mexe apenas no container dentro do principal*/
+    width: 70%;
+}
+
+.box-filme{
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+
+.assistidos{
+    padding: 20px;
+    
+}
+.carrossel-filmes{
+    margin-left: 2px;
+}
+
+.bota:focus{
+    color: #E50914;
+}
+@media screen and (min-width:1000px) {
+    .descricao{
+        width: 50%;
+    }
+    .principal{
+        height: 500px;
+    }
+}
+
